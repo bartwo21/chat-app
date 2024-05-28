@@ -16,26 +16,13 @@ export default function Chat() {
 
   useEffect(() => {
     connecToWs();
-    return () => {
-      if (ws) {
-        ws.removeEventListener("message", handleMessage);
-        ws.close();
-      }
-    };
   }, []);
 
   const connecToWs = () => {
-    if (
-      ws &&
-      ws.readyState !== WebSocket.CLOSED &&
-      ws.readyState !== WebSocket.CLOSING
-    ) {
-      return;
-    }
-    const newWs = new WebSocket("wss://chat-app-api-two-black.vercel.app");
-    setWs(newWs);
-    newWs.addEventListener("message", handleMessage);
-    newWs.addEventListener("close", () => {
+    const ws = new WebSocket("wss://chat-app-api-two-black.vercel.app");
+    setWs(ws);
+    ws.addEventListener("message", handleMessage);
+    ws.addEventListener("close", () => () => {
       setTimeout(() => {
         connecToWs();
       }, 1000);
