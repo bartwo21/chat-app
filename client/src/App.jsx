@@ -2,7 +2,8 @@ import axios from "axios";
 import { UserContextProvider } from "./contexts/UserContext";
 import { Routes } from "./routes/routes";
 function App() {
-  axios.defaults.baseURL = "https://chat-app-ecru-five.vercel.app/";
+  axios.defaults.baseURL =
+    "https://66563489698ac88de6f4a558--dainty-fox-59bf9e.netlify.app";
   axios.defaults.withCredentials = true;
   return (
     <UserContextProvider>
