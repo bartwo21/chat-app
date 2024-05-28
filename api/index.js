@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: process.env.CLIENT_URL,
+    origin: "https://chat-app-client-nine-theta.vercel.app",
     credentials: true,
   })
 );
@@ -138,7 +138,7 @@ app.post("/register", async (req, res) => {
   }
 });
 
-const server = app.listen(4040);
+const server = app.listen(8080);
 
 const wss = new ws.WebSocketServer({ server });
 wss.on("connection", (connection, req) => {
