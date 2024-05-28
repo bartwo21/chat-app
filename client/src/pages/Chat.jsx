@@ -19,7 +19,7 @@ export default function Chat() {
   }, []);
 
   const connecToWs = () => {
-    const ws = new WebSocket("ws:https://mern-chat-app-bar2.vercel.app/");
+    const ws = new WebSocket("ws:https://mern-chat-app-bar2.vercel.app");
     setWs(ws);
     ws.addEventListener("message", handleMessage);
     ws.addEventListener("close", () => () => {
