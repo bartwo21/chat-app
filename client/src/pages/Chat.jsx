@@ -19,7 +19,7 @@ export default function Chat() {
   }, []);
 
   const connecToWs = () => {
-    const ws = new WebSocket("ws://localhost:8080");
+    const ws = new WebSocket("ws://chat-app-api-two-black.vercel.app");
     setWs(ws);
     ws.addEventListener("message", handleMessage);
     ws.addEventListener("close", () => () => {
