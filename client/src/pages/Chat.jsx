@@ -20,7 +20,7 @@ export default function Chat() {
 
   const connecToWs = () => {
     const ws = new WebSocket(
-      "wss://66563489698ac88de6f4a558--dainty-fox-59bf9e.netlify.app/"
+      "wss://66563489698ac88de6f4a558--dainty-fox-59bf9e.netlify.app"
     );
     setWs(ws);
     ws.addEventListener("message", handleMessage);
