@@ -24,6 +24,20 @@ app.use(
   })
 );
 
+app.use((req, res, next) => {
+  res.header(
+    "Access-Control-Allow-Origin",
+    "https://chat-app-mern-client-steel.vercel.app"
+  );
+  res.header("Access-Control-Allow-Methods", "GET,POST");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  res.header("Access-Control-Allow-Credentials", "true");
+  next();
+});
+
 app.use(express.json());
 app.use(cookieParser());
 
