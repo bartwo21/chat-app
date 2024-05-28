@@ -16,6 +16,14 @@ mongoose.connect(process.env.MONGO_URL);
 
 const app = express();
 
+app.use(
+  cors({
+    origin: ["https://mern-chat-app-bar2.vercel.app/"],
+    methods: ["GET", "POST"],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 app.use(cookieParser());
 app.use(
