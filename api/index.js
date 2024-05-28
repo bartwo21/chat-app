@@ -25,6 +25,15 @@ app.use(
   })
 );
 
+app.use((req, res, next) => {
+  res.header(
+    "Access-Control-Allow-Origin",
+    "https://chat-app-client-nine-theta.vercel.app"
+  );
+  res.header("Access-Control-Allow-Credentials", "true");
+  next();
+});
+
 const getUserDataFromRequest = async (req, res) => {
   return new Promise((resolve, reject) => {
     const token = req.cookies?.token;
