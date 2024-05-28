@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://66563489698ac88de6f4a558--dainty-fox-59bf9e.netlify.app",
+    origin: "https://6656431bad64be895fc5ef59--dainty-fox-59bf9e.netlify.app",
     credentials: true,
   })
 );
@@ -28,7 +28,7 @@ app.use(
 app.use((req, res, next) => {
   res.header(
     "Access-Control-Allow-Origin",
-    "https://66563489698ac88de6f4a558--dainty-fox-59bf9e.netlify.app"
+    "https://6656431bad64be895fc5ef59--dainty-fox-59bf9e.netlify.app"
   );
   res.header("Access-Control-Allow-Credentials", "true");
   next();
