@@ -18,7 +18,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: ["https://chat-app-mern-client-steel.vercel.app"],
+    origin: true,
     methods: ["GET", "POST"],
     credentials: true,
   })
