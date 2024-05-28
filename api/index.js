@@ -26,12 +26,6 @@ app.use(
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-  cors({
-    origin: process.env.CLIENT_URL,
-    credentials: true,
-  })
-);
 
 const getUserDataFromRequest = async (req, res) => {
   return new Promise((resolve, reject) => {
