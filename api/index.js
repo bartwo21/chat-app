@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://chat-app-client-nine-theta.vercel.app",
+    origin: "https://stellular-khapse-92af05.netlify.app",
     credentials: true,
   })
 );
@@ -28,7 +28,7 @@ app.use(
 app.use((req, res, next) => {
   res.header(
     "Access-Control-Allow-Origin",
-    "https://chat-app-client-nine-theta.vercel.app"
+    "https://stellular-khapse-92af05.netlify.app"
   );
   res.header("Access-Control-Allow-Credentials", "true");
   next();
