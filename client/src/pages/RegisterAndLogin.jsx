@@ -13,6 +13,10 @@ export default function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!username || !password) {
+      setError("Please fill in all fields");
+      return;
+    }
     setLoading(true);
     const url = isLoginOrRegister === "register" ? "/register" : "/login";
     try {
