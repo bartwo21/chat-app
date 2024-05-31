@@ -4,7 +4,7 @@ This project is a real-time chat application where users can log in, register, a
 
 ## Live Demo
 
-[Live Demo](https://6656431bad64be895fc5ef59--dainty-fox-59bf9e.netlify.app)
+[Live Demo](https://66574e31cd59f833c0111219--dainty-fox-59bf9e.netlify.app)
 
 ## Features
 
