@@ -1,4 +1,4 @@
-# Chat Application
+# Chat Application (First login or registration may take up to 1 minute)
 
 This project is a real-time chat application where users can log in, register, and chat with online users. The application is developed using Node.js, Express, MongoDB, and WebSocket.
 
