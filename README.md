@@ -1,10 +1,10 @@
-# Chat Application (First login or registration may take up to 1 minute)
+# Chat Application
 
 This project is a real-time chat application where users can log in, register, and chat with online users. The application is developed using Node.js, Express, MongoDB, and WebSocket.
 
 ## Live Demo
 
-[Live Demo](https://66574e31cd59f833c0111219--dainty-fox-59bf9e.netlify.app)
+[Live Demo](https://66574e31cd59f833c0111219--dainty-fox-59bf9e.netlify.app)  (First login or registration may take up to 1 minute)
 
 ## Features
 
